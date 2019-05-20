@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>API Hack Capstone</title>
+    <meta name="description" content="Assist users in finding new media that is similar to their current favorites. Examples include: music, movies, TV shows, books, authors, games, and podcasts.">
+
+    <link rel="stylesheet" href="resources/css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header role="banner">
+
+    </header>
+
+    <main role="main">
+        <section role="region" class="home-page js-home-page">
+            <div class="container">
+                <h1>Let's Find Something New!</h1>
+                <form class="home-form js-home-form">
+                    <input type="text" name="search" class="search-term" placeholder="Game of Thrones" required>
+                    <label class="category">
+                        <span>Category: </span>
+                        <select name="category" class="category-selector">
+                            <option value="all">All</option>
+                            <option value="music">Music</option>
+                            <option value="movies">Movies</option>
+                            <option value="show">TV shows</option>
+                            <option value="books">Books</option>
+                            <option value="authors">Authors</option>
+                            <option value="games">Games</option>
+                            <option value="podcasts">Podcasts</option>
+                        </select>
+                    </label>
+                    <input type="submit" class="submit-btn" value="Submit">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+
+    </footer>
+    <script src="resources/js/script.js"></script>
+</body>
+</html>
