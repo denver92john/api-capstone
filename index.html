@@ -15,7 +15,10 @@
 
 <body>
     <header role="banner">
-
+        <div class="container">
+            <img src="resources/img/wireframe-box.jpg" alt="wireframe box" class="logo">
+            <h2>Header</h2>
+        </div>
     </header>
 
     <main role="main">
@@ -37,16 +40,61 @@
                             <option value="podcasts">Podcasts</option>
                         </select>
                     </label>
-                    <input type="submit" class="submit-btn" value="Submit">
+                    <input type="submit" class="submit-btn" value="Search">
                 </form>
             </div>
         </section>
 
+        <section role="region">
+            <div class="container">
+                <form class="results-page-form js-results-page-form">
+                    <label for="search" class="item-a">Search: </label>
+                    <input type="text" id="search" class="item-b" placeholder="whatever">
+                    
+                    <label for="category" class="item-c">Category: </label>
+                    <select id="category" class="item-d category-selector">
+                        <option value="all">All</option>
+                        <option value="music">Music</option>
+                        <option value="movies">Movies</option>
+                        <option value="show">TV shows</option>
+                        <option value="books">Books</option>
+                        <option value="authors">Authors</option>
+                        <option value="games">Games</option>
+                        <option value="podcasts">Podcasts</option>
+                    </select>
+                    
+                    <input type="submit" class="item-e submit-btn" value="Search">
+                </form>                
+            </div>
+        </section>
+
+        <p id="js-error-message" class="error-message"></p>
+        <div class="container">
+            <section role="region" id="results" class="hidden">
+                <h3>Info</h3>
+                <div class="similar-info">
+                    <h4>Name</h4>
+                    <p>show</p>
+                    <!-- <iframe src="#" frameborder="0"></iframe> -->
+                    <p>wiki link?</p>
+                    <p>description</p>
+                </div>
+                <h3>Similar Results</h3>
+                <ul class="similar-results">
+                    <li>
+                        <h4>Title</h4>
+                        <p>Type</p>
+                        <!-- <iframe src="#" frameborder="0"></iframe> -->
+                        <p>wiki link?</p>
+                        <p>description</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 
-    <footer role="contentinfo">
-
-    </footer>
+    <footer role="contentinfo"></footer>
+    
     <script src="resources/js/script.js"></script>
 </body>
 </html>

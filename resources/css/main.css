@@ -14,6 +14,10 @@ html {
     padding: 10px;
 }
 
+label {
+    display: block;
+}
+
 /* ---------- HEADINGS & TEXT ---------- */
 h1 {
     text-align: center;
@@ -54,8 +58,77 @@ h1 {
 }
 
 /* ---------- RESULTS PAGE ---------- */
+
+/* ---------- HEADER ---------- */
 header {
-    height: 20vh;
+    height: 15vh;
     width: 100vw;
     background-color: teal;
 }
+
+.logo {
+    width: 50px;
+}
+
+
+/* ---------- RESULTS PAGE ---------- */
+
+
+
+/* ---------- RESULTS PAGE FORM ---------- */
+.results-page-form {
+    display: grid;
+    grid-template-columns: auto 20px auto;
+    grid-auto-rows: auto 10px auto 10px auto;
+}
+
+.item-a {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: right;
+}
+
+.item-b {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.item-c {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    text-align: right;
+}
+
+.item-d {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.item-e {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+
+/* ---------- FOOTER ---------- */
+footer {
+    width: 100vw;
+    height: 8vh;
+    background-color: yellowgreen;
+}
+
+
+/*
+        <section role="region">
+            <h3>Results</h3>
+            <ul>
+                <li>
+                    <h4>Name</h4>
+                    <p>show</p>
+                    <iframe src="https://www.youtube-nocookie.com/embed/l4J7Qqn_Owk" frameborder="0"></iframe>
+                    <p>wiki link?</p>
+                    <p>description</p>
+                </li>
+            </ul>
+        </section>
+*/

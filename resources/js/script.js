@@ -14,7 +14,7 @@ function handleHomePage() {
 }
 
 function handleHomeForm() {
-    $('.js-home-form').on('submit',event => {
+    $('.js-home-form').on('submit', event => {
         event.preventDefault();
         handleHomePage();
     });
