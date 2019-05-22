@@ -71,7 +71,6 @@ header {
 }
 
 
-/* ---------- RESULTS PAGE ---------- */
 
 
 
@@ -109,6 +108,11 @@ header {
     grid-row: 5 / 6;
 }
 
+
+/* ---------- RESULTS PAGE RETURNED RESPONSE ---------- */
+.error-message {
+    color: red;
+}
 
 /* ---------- FOOTER ---------- */
 footer {

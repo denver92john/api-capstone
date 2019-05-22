@@ -26,11 +26,11 @@
             <div class="container">
                 <h1>Let's Find Something New!</h1>
                 <form class="home-form js-home-form">
-                    <input type="text" name="search" class="search-term" placeholder="Game of Thrones" required>
+                    <input type="text" class="search-term" placeholder="Game of Thrones" required>
                     <label class="category">
                         <span>Category: </span>
                         <select name="category" class="category-selector">
-                            <option value="all">All</option>
+                            <option value="mixed">All</option>
                             <option value="music">Music</option>
                             <option value="movies">Movies</option>
                             <option value="show">TV shows</option>
@@ -49,7 +49,7 @@
             <div class="container">
                 <form class="results-page-form js-results-page-form">
                     <label for="search" class="item-a">Search: </label>
-                    <input type="text" id="search" class="item-b" placeholder="whatever">
+                    <input type="text" id="search" class="item-b search-term" placeholder="whatever" required>
                     
                     <label for="category" class="item-c">Category: </label>
                     <select id="category" class="item-d category-selector">
@@ -79,6 +79,7 @@
                     <p>wiki link?</p>
                     <p>description</p>
                 </div>
+
                 <h3>Similar Results</h3>
                 <ul class="similar-results">
                     <li>
@@ -94,7 +95,7 @@
     </main>
 
     <footer role="contentinfo"></footer>
-    
+
     <script src="resources/js/script.js"></script>
 </body>
 </html>
